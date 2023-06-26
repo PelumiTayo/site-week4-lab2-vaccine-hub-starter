@@ -1,9 +1,10 @@
 const app = require("./app");
+const { PORT } = require("../vaccine-registration-api/config")
 
-const port = process.env.PORT || 3000;
+// const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-  console.log(`🚀 Server listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`🚀 Server listening at http://localhost:${PORT}`);
 });
 
 //handle all 404 errors
